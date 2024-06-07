@@ -26,11 +26,10 @@
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Jenis</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" name="jenis" aria-label="Default select example">
                         <option selected>Pilih Jenis Barang</option>
                         <option value="Hardware">Hardware</option>
                         <option value="Software">Software</option>
-                        <option value="Lainnya">Lainnya</option>
                     </select>
                 </div>
 

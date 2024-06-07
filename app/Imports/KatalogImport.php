@@ -17,8 +17,9 @@ class KatalogImport implements ToModel
         return new Katalog([
             'namaBarang' => $row[1],
             'deskripsi' => $row[2],
-            'harga' => $row[3],
-            'foto' => $row[4]
+            'jenis' => $row[3],
+            'harga' => $row[4],
+            'foto' => $row[5]
         ]);
     }
 }

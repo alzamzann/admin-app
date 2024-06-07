@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #090808;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 100px;
+    border: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #090808;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #ffd000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* Burger menu styles */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    #sidemenu.show {
+        display: flex;
+    }
+}
+
+.bg {
+    display: flex;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color:#ffae00;
+}
+
+/* ABOUT */
+
+#about {
+    padding: 200px 0;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.about-col-2 {
+    flex-basis: 40%;
+}
+
+.sub-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffae00;
+}
+
+p{
+    color: #090808;
+}
+
+/* Service */
+
+#departemen {
+    padding: 40px 0;
+}
+
+.sub-title-Product {
+    text-align: center;
+    font-size: 50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .gallery-item {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+/* Company Profile */
+
+#about1 {
+    margin-top: 400px;
+}
+.sub-title1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffae00;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.about-col-1 {
+    flex-basis: 40%;
+}
+
+/* Portofolio */
+
+#portofolio {
+    padding: 50px 0;
+    margin-top: 400px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.sub-title-c {
+    text-align: center;
+}
+
+.sub-title-c p {
+    text-align: center;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #d2d2d2);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    color: #fff;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: aqua;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ffd000;
+    padding: 11px 60px;
+    border-radius: 6px;
+    color: #130f0f;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ffd000;
+}
+
+
+.horizontal-line {
+    display: block; /* membuat span bertindak seperti block */
+    width: 70%; /* panjang garis */
+    height: 2px; /* ketebalan garis */
+    background-color: rgb(57, 57, 57); /* warna garis */
+    margin: 20px auto; /* menengahkannya */
+}
+
+.deptlog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Jarak antara gambar */
+    max-width: 100%; /* Atur sesuai kebutuhan Anda */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.deptlog img {
+    width: 50px; /* Ukuran gambar bisa disesuaikan */
+    height: 50px; /* Harus sama dengan lebar untuk membuatnya lingkaran */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    object-fit: cover; /* Memastikan gambar menyesuaikan dengan baik dalam lingkaran */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Warna hijau khas WhatsApp */
+    color: white;
+    border-radius: 50%;
+    width: 60px; /* Ukuran tombol */
+    height: 60px; /* Ukuran tombol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+    text-decoration: none;
+}
+
+.whatsapp-button i {
+    font-size: 24px; /* Ukuran ikon */
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE57; /* Warna hijau sedikit lebih gelap saat dihover */
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #ffffff;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #241919;
+}
+

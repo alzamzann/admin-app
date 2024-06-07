@@ -2,22 +2,22 @@
 <html>
 <head>
 <style>
-#customers {
+#katalog {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td, #customers th {
+#katalog td, #katalog th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#katalog tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#katalog tr:hover {background-color: #ddd;}
 
-#customers th {
+#katalog th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -30,12 +30,13 @@
 
 <h1>Data Katalog</h1>
 
-<table id="customers">
+<table id="katalog">
     <tr>
         <th>No</th>
         <th>Nama Barang</th>
         <th>Foto</th>
         <th>Deskripsi</th>
+        <th>Jenis</th>
         <th>Harga</th>
         <th>Tanggal Ditambahkan</th>
         <th>Tanggal Diperbarui</th>
@@ -49,6 +50,7 @@
         <td>{{ $row->namaBarang }}</td>
         <td><img src="{{ public_path('fotoBarang/'.$row->foto) }}" alt="" style="width: 40px;"></td>
         <td>{{ $row->deskripsi }}</td>
+        <td>{{ $row->jenis }}</td>
         <td>{{ $row->harga }}</td>
         <td>{{ $row->created_at->format('D M Y') }}</td>
         <td>{{ $row->updated_at->diffForHumans() }}</td>

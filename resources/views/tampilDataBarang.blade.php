@@ -10,7 +10,8 @@
         <div class="col-8">
           <div class="card">
             <div class="card-body">
-              <form action="/updateDataBarang/{{$data->id}}" method='POST' enctype="multipart/form-data">
+              {{-- <form action="/updateDataBarang/{{$data->id}}" method='POST' enctype="multipart/form-data"> --}}
+              <form action="{{ route('updateDataBarang', $data->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     <label label for="exampleInputEmail1" class="form-label">Nama Barang</label>
@@ -24,11 +25,10 @@
 
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Jenis</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select name="jenis" aria-label="Default select example">
                         <option selected >Pilih Jenis Barang</option>
                         <option value="Hardware">Hardware</option>
                         <option value="Software">Software</option>
-                        <option value="Lainnya">Lainnya</option>
                     </select>
                 </div>
 
@@ -47,7 +47,7 @@
                     @endif
                     <input type="file" name="foto" class="form-control" id="foto">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Update</button>
               </form>
           </div>
 

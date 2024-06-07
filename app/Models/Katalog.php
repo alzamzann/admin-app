@@ -9,6 +9,6 @@ class Katalog extends Model
 {
     use HasFactory;
 
-    protected $guarded =  [];
+    protected $fillable = ['namaBarang', 'deskripsi', 'jenis', 'harga', 'foto'];
     protected $dates = ['created_at', 'updated_at'];
 }

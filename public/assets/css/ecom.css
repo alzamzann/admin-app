@@ -1,0 +1,214 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+#header {
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 5vh;
+    background-image: url();
+    background-size:cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 100px;
+    border: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #00bfff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#hardware {
+    flex: 1;
+}
+
+#software {
+    flex: 1;
+}
+
+section {
+    padding: 10px 10%;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
+.item {
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+        /* Pastikan lebar dan tinggi sesuai kebutuhan */:;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.nama-item {
+    margin: 10px 0;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+h5 {
+    margin-left: 10px;
+}
+
+.deskripsi {
+    margin-left: 10px;
+}
+
+.harga {
+    margin-bottom: 10px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+h1 {
+    margin-left:120px;
+}
+
+form {
+    width: 100%;
+    margin-left: 120px;
+}
+
+.field-wrap {
+    margin: 20px;
+}
+
+.btn-tambah {
+    width: 100%;
+    background-color: #af2c2c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-tambah:hover {
+    background-color: #33adff;
+}
+
+.keranjang {
+    padding-top: 20px;
+    width: 100%;
+    margin-left: 120px;
+    flex: 0 0 calc(50% - 20px);
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.keranjang h2 {
+    margin-left: 20px;
+}
+
+.keranjang p {
+    margin-left: 20px;
+}
+
+.keranjang ul {
+    margin-left: 20px;
+}
+
+#keranjang-items {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+#total-harga {
+    font-weight: bold;
+    color: #000000;
+}
+
+.btn-selesai {
+    width: 100%;
+    background-color: #4c56af;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-selesai:hover {
+    background-color: #f44336;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .item {
+        flex: 0 0 calc(50% - 20px);
+    }
+}

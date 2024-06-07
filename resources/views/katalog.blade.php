@@ -49,9 +49,10 @@
 
         <div class="row">
         @if($message = Session::get('sukses'))
-          <div class="alert alert-success" role="alert">
-              {{$message}}
+          <div class="sdf" role="alert">
+             <strong>{{$message}}</strong>
           </div>
+
         @endif
 
           <table class="table">
@@ -108,31 +109,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
-    <script>
-    $('.delete').click(function(){
-        var katalogid = $(this).attr('data-id');
-        var namaBrg = $(this).attr('data-namaBarang');
-
-        Swal.fire({
-            title: "Apakah Anda Yakin?",
-            text: "Kamu akan menghapus data "+namaBrg+" ",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Ya, Hapus Data!"
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location ="/deleteDataBarang/"+katalogid+"";
-                Swal.fire({
-                title: "Berhasil Dihapus!",
-                text: "Data Katalog Telah Dihapus.",
-                icon: "success"
-                });
-            }
-        });
-    });
-    </script>
 
     <script>
     @if(Session::has('sukses'))
