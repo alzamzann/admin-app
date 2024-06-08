@@ -12,6 +12,7 @@
         <nav>
             <img src="{{ asset('img/Lighter_Tech_Logo.png') }}" class="logo" />
             <ul id="sidemenu">
+                <li><a href="/lighter-tech">Home</a></li>
                 <li><a href="#hardware">Hardware</a></li>
                 <li><a href="#software">Software</a></li>
                 <li><a href="#lainnya">Lain-Lain</a></li>

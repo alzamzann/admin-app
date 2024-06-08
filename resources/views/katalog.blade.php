@@ -6,20 +6,18 @@
 @endpush
 
 @section('content')
-
+<style> h1 {
+    margin-left: 500px;
+}</style>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
+          <div class="col-sm-12 text-center">
             <h1 class="m-0">Katalog Barang</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Katalog Barang</li>
-            </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -28,10 +26,10 @@
     <div class="container">
         <a href="/addBarang" type="button" class="btn btn-primary">Add Data +</a>
 
-          <div class="row g-3 align-items-center mt-2">
+          <div class="row g-3 align-items-center mt-2 mb-2">
             <div class="col-auto">
               <form action="/katalog" method="GET">
-                <input type="search" id="inputSearch" name="search" class="form-control" aria-describedby="passwordHelpInline">
+                <input type="search" id="inputSearch" name="search" class="form-control" aria-describedby="passwordHelpInline" placeholder="Ketikkan Nama Barang">
               </form>
             </div>
             <div class="col-auto">
@@ -47,7 +45,7 @@
             </div>
           </div>
 
-        <div class="row">
+        <div class="row g-3 align-items-center mt-2 mb-2">
         @if($message = Session::get('sukses'))
           <div class="sdf" role="alert">
              <strong>{{$message}}</strong>

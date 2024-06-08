@@ -13,10 +13,11 @@
         <nav>
             <img src="assets/gambar/Lighter_Tech_Logo.png" class="logo" />
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
+                <li><a href="/home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#departemen">Departemen</a></li>
                 <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="/admin">Login</a></li>
             </ul>
             <div class="burger" id="burger">
                 <div></div>
