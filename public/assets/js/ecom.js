@@ -11,6 +11,17 @@ function tambahKeKeranjang(item, harga) {
     updateKeranjang();
 }
 
+function kurangiDariKeranjang(item, harga) {
+    if (keranjang[item]) {
+        keranjang[item].jumlah--;
+        totalHarga -= harga;
+        if (keranjang[item].jumlah === 0) {
+            delete keranjang[item];
+        }
+        updateKeranjang();
+    }
+}
+
 function updateKeranjang() {
     const keranjangItems = document.getElementById('keranjang-items');
     keranjangItems.innerHTML = '';
@@ -18,6 +29,20 @@ function updateKeranjang() {
         const item = keranjang[nama];
         const li = document.createElement('li');
         li.textContent = `${nama} - ${formatRupiah(item.harga)} x ${item.jumlah}pcs = ${formatRupiah(item.harga * item.jumlah)} `;
+
+        // Tambahkan tombol tambah dan kurang
+        const btnTambah = document.createElement('button');
+        btnTambah.textContent = '+';
+        btnTambah.classList.add('btn-tambah-item');
+        btnTambah.onclick = () => tambahKeKeranjang(nama, item.harga);
+        
+        const btnKurang = document.createElement('button');
+        btnKurang.textContent = '-';
+        btnKurang.classList.add('btn-kurang-item');
+        btnKurang.onclick = () => kurangiDariKeranjang(nama, item.harga);
+
+        li.appendChild(btnTambah);
+        li.appendChild(btnKurang);
         keranjangItems.appendChild(li);
     });
 
@@ -35,7 +60,7 @@ function selesaiPesan() {
     }).join('\n');
 
     const data = {
-        "session": "mysession",
+        "session": "lighter",
         "to": nowa,
         "text": `Nama: ${firstName}\nAlamat: ${alamat}\n\nKeranjang:\n${isiKeranjang}\n\nTotal Harga: ${formatRupiah(totalHarga)}`
     }
@@ -67,7 +92,6 @@ function selesaiPesan() {
     totalHarga = 0;
     updateKeranjang();
 }
-
 
 function formatRupiah(angka) {
     var reverse = angka.toString().split('').reverse().join(''),

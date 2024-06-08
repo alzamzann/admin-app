@@ -15,7 +15,7 @@
                 <li><a href="/lighter-tech">Home</a></li>
                 <li><a href="#hardware">Hardware</a></li>
                 <li><a href="#software">Software</a></li>
-                <li><a href="#lainnya">Lain-Lain</a></li>
+                <li><a href="/admin">Login</a></li>
             </ul>
         </nav>
     </div>

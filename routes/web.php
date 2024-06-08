@@ -38,6 +38,8 @@ Route::post('/importExcel', [KatalogController::class, 'importExcel'])->name('im
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
+Route::get('/eikyoig', [KatalogController::class, 'eikyoig'])->name('eikyoig');
+
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');

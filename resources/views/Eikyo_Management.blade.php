@@ -184,7 +184,7 @@
                 </div>
             </div>
         </div>
-        <a href="#services" class="btn">See more</a>
+        <a href="https://www.instagram.com/eikyomanagement/" class="btn">See more</a>
     </div>
 </div>
 <!-- Portofolio Selesai -->

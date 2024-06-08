@@ -184,8 +184,18 @@
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+            <div class="work">
+                <img src="assets/gambar/projek/himatekkom.jpg" />
+                <div class="layer">
+                    <h3>HIMA TEKKOM</h3>
+                    <p>
+                        AVISKARA EXCELENTIAE
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
         </div>
-        <a href="/ecom" class="btn">See more</a>
+        <a href="/ecom" class="btn">E-commerce</a>
     </div>
 </div>
 <!-- Portofolio Selesai -->

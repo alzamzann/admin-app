@@ -113,6 +113,7 @@ class KatalogController extends Controller
 
         return view('admindash', compact('jumlahHardware', 'jumlahSoftware'));
     }
+    
 
 
 // public function showHardware() {
