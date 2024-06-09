@@ -54,7 +54,7 @@ class KatalogController extends Controller
         $request->validate([
             'namaBarang' => 'required',
             'deskripsi' => 'required',
-            'jenis' => 'required|in:Hardware,Software,Lainnya',
+            'jenis' => 'required|in:Hardware,Software',
             'harga' => 'required|numeric',
             'foto' => 'sometimes|file|image|max:5000',
         ]);
@@ -113,7 +113,7 @@ class KatalogController extends Controller
 
         return view('admindash', compact('jumlahHardware', 'jumlahSoftware'));
     }
-    
+
 
 
 // public function showHardware() {
