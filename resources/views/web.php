@@ -7,7 +7,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 // use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/admin', function () {
@@ -15,7 +15,7 @@ Route::get('/admin', function () {
     $jumlahHardware = Katalog::where('jenis', 'Hardware')->count();
     $jumlahSoftware = Katalog::where('jenis', 'Software')->count();
 
-    return view('admindash', compact('jumlahBarang', 'jumlahHardware','jumlahSoftware'));
+    return view('admindash', compact('jumlahBarang', 'jumlahHardware', 'jumlahSoftware'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog');
@@ -46,7 +46,7 @@ Route::get('/ecom', function () {
     $ecomHardware = Katalog::where('jenis', 'hardware')->get();
     $ecomSoftware = Katalog::where('jenis', 'software')->get();
 
-    return view('ecom', compact('ecomHardware','ecomSoftware'));
+    return view('ecom', compact('ecomHardware', 'ecomSoftware'));
 })->name('ecom');
 
 Route::get('/home', function () {
@@ -75,4 +75,4 @@ Route::get('/eikyo-management', function () {
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

@@ -13,11 +13,10 @@
         <nav>
             <img src="assets/gambar/Lighter_Tech_Logo.png" class="logo" />
             <ul id="sidemenu">
-                <li><a href="/home">Home</a></li>
+                <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#departemen">Departemen</a></li>
                 <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="/admin">Login</a></li>
             </ul>
             <div class="burger" id="burger">
                 <div></div>
@@ -119,7 +118,7 @@
 <!-- Portofolio Selesai -->
 <div id="portofolio">
     <div class="container">
-        <h1 class="sub-title-c">Our Product</h1>
+        <h1 class="sub-title-c">Our Client</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -184,18 +183,8 @@
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="work">
-                <img src="assets/gambar/projek/himatekkom.jpg" />
-                <div class="layer">
-                    <h3>HIMA TEKKOM</h3>
-                    <p>
-                        AVISKARA EXCELENTIAE
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
         </div>
-        <a href="/ecom" class="btn">E-commerce</a>
+        <a href="#services" class="btn">See more</a>
     </div>
 </div>
 <!-- Portofolio Selesai -->

@@ -13,7 +13,7 @@
         <nav>
             <img src="assets/gambar/multimedia.png" class="logo" />
             <ul id="sidemenu">
-                <li><a href="/home">Home</a></li>
+                <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#departemen">Departemen</a></li>
                 <li><a href="#portofolio">Portofolio</a></li>
@@ -184,7 +184,7 @@
                 </div>
             </div>
         </div>
-        <a href="https://www.instagram.com/lightermultimedia/" class="btn">See more</a>
+        <a href="#services" class="btn">See more</a>
     </div>
 </div>
 <!-- Portofolio Selesai -->

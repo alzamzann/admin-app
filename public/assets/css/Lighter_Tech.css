@@ -152,7 +152,7 @@ nav ul li a:hover::after {
 .row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .about-col-2 {
@@ -234,7 +234,7 @@ p{
 .row1 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .about-col-1 {
@@ -343,7 +343,7 @@ p{
     display: block; /* membuat span bertindak seperti block */
     width: 70%; /* panjang garis */
     height: 2px; /* ketebalan garis */
-    background-color: rgb(0, 140, 255); /* warna garis */
+    background-color: rgb(57, 57, 57); /* warna garis */
     margin: 20px auto; /* menengahkannya */
 }
 
@@ -395,9 +395,9 @@ p{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #163c5b;
+    background: #ffffff;
     font-weight: 300;
     margin-top: 20px;
-    color: #fff;
+    color: #241919;
 }
 

@@ -181,13 +181,7 @@ form {
 #keranjang-items {
     list-style-type: none;
     padding: 0;
-}
 
-#keranjang-items li {
-    margin-bottom: 10px; /* Atur jarak bawah antar item */
-    padding: 10px; /* Atur padding untuk setiap item */
-    border-bottom: 1px solid #ddd; /* Tambahkan garis bawah untuk pemisah */
-    list-style-type: none; /* Hilangkan bullet point */
 }
 
 #total-harga {
@@ -209,24 +203,6 @@ form {
     background-color: #f44336;
 }
 
-.btn-tambah-item, .btn-kurang-item {
-    margin: 0 5px; /* Atur jarak horizontal antara tombol */
-    padding: 5px 10px; /* Atur padding tombol */
-    cursor: pointer; /* Ubah kursor saat hover */
-    border: none; /* Hilangkan border */
-    border-radius: 3px; /* Tambahkan border radius */
-}
-
-.btn-tambah-item {
-    background-color: #4CAF50; /* Warna latar belakang hijau untuk tombol tambah */
-    color: white; /* Warna teks putih */
-}
-
-.btn-kurang-item {
-    background-color: #f44336; /* Warna latar belakang merah untuk tombol kurang */
-    color: white; /* Warna teks putih */
-}
-
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -236,5 +212,3 @@ form {
         flex: 0 0 calc(50% - 20px);
     }
 }
-
-
